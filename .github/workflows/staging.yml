@@ -24,7 +24,7 @@ jobs:
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
         server: ftp.maliziacoffe.altervista.org
-        username: ${{ youranshidashabi }}
-        password: ${{ Pp4wSGu5c9m4 }}
+        username: ${{ secrets.ftp_username }}
+        password: ${{ secrets.ftp_password }}
         local-dir: ./2121_wave_cafe/
         server-dir: /staging/
